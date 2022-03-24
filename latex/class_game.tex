@@ -1,0 +1,108 @@
+\hypertarget{class_game}{}\doxysection{Game Class Reference}
+\label{class_game}\index{Game@{Game}}
+
+
+Main Class.  
+
+
+
+
+{\ttfamily \#include $<$1.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_game_ad59df6562a58a614fda24622d3715b65}\label{class_game_ad59df6562a58a614fda24622d3715b65}} 
+\mbox{\hyperlink{class_game_ad59df6562a58a614fda24622d3715b65}{Game}} ()
+\begin{DoxyCompactList}\small\item\em Class constructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_ab7b993ae47bb09690d33da2338aa59f2}{Start}} (\mbox{\hyperlink{class_game}{Game}} Kalax, int mode)
+\item 
+int \mbox{\hyperlink{class_game_aca6a6933c2a95d7f732f612da86b649b}{win}} ()
+\item 
+int \mbox{\hyperlink{class_game_adc6ef9389c10b08e78d7557b206ebc52}{move}} (int hole, int \mbox{\hyperlink{class_game_a225b4cdf0dee24247700b83a2808f440}{plr}})
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_game_a869dc3ddfbe257d495d5bc286163b8ae}\label{class_game_a869dc3ddfbe257d495d5bc286163b8ae}} 
+std\+::vector$<$ int $>$ \mbox{\hyperlink{class_game_a869dc3ddfbe257d495d5bc286163b8ae}{Map}}
+\begin{DoxyCompactList}\small\item\em Map vector. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_game_a225b4cdf0dee24247700b83a2808f440}\label{class_game_a225b4cdf0dee24247700b83a2808f440}} 
+int \mbox{\hyperlink{class_game_a225b4cdf0dee24247700b83a2808f440}{plr}}
+\begin{DoxyCompactList}\small\item\em Player parameter. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_game_a5b016b85f4fd184c4cbab927e965f5a4}\label{class_game_a5b016b85f4fd184c4cbab927e965f5a4}} 
+int \mbox{\hyperlink{class_game_a5b016b85f4fd184c4cbab927e965f5a4}{kal1}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_game}{Game}} values. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_game_afeb5859696bb6e60d2e99a272af27fa2}\label{class_game_afeb5859696bb6e60d2e99a272af27fa2}} 
+int {\bfseries kal2}
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \mbox{\hyperlink{class_game_ae4a8891c49a10e3c4fe2ccbf16025850}{operator«}} (std\+::ostream \&out, const \mbox{\hyperlink{class_game}{Game}} \&Kalax)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Main Class. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_game_adc6ef9389c10b08e78d7557b206ebc52}\label{class_game_adc6ef9389c10b08e78d7557b206ebc52}} 
+\index{Game@{Game}!move@{move}}
+\index{move@{move}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{move()}{move()}}
+{\footnotesize\ttfamily int Game\+::move (\begin{DoxyParamCaption}\item[{int}]{hole,  }\item[{int}]{plr }\end{DoxyParamCaption})}
+
+Method of move on game field 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em hole} & \mbox{\hyperlink{class_game}{Game}} cell \\
+\hline
+\mbox{\texttt{ in}}  & {\em plr} & Number of player \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int result field 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_game_ab7b993ae47bb09690d33da2338aa59f2}\label{class_game_ab7b993ae47bb09690d33da2338aa59f2}} 
+\index{Game@{Game}!Start@{Start}}
+\index{Start@{Start}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily void Game\+::\+Start (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game}{Game}}}]{Kalax,  }\item[{int}]{mode }\end{DoxyParamCaption})}
+
+Method begins game 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em Kalax} & \mbox{\hyperlink{class_game}{Game}} parameter \\
+\hline
+\mbox{\texttt{ in}}  & {\em mode} & \mbox{\hyperlink{class_game}{Game}} mode \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_game_aca6a6933c2a95d7f732f612da86b649b}\label{class_game_aca6a6933c2a95d7f732f612da86b649b}} 
+\index{Game@{Game}!win@{win}}
+\index{win@{win}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{win()}{win()}}
+{\footnotesize\ttfamily int Game\+::win (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Method сheck for victory \begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{class_game_ae4a8891c49a10e3c4fe2ccbf16025850}\label{class_game_ae4a8891c49a10e3c4fe2ccbf16025850}} 
+\index{Game@{Game}!operator«@{operator«}}
+\index{operator«@{operator«}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{operator«}{operator«}}
+{\footnotesize\ttfamily std\+::ostream\& operator« (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{out,  }\item[{const \mbox{\hyperlink{class_game}{Game}} \&}]{Kalax }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+Method of move on game field 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em out} & std\+::ostream parameter \\
+\hline
+\mbox{\texttt{ in}}  & {\em Kalax} & \mbox{\hyperlink{class_game}{Game}} field \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+1.\+h\end{DoxyCompactItemize}

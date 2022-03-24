@@ -1,0 +1,3 @@
+"C:\Users\grzdn\CLion 2021.1.1\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\Hexagon.dir/objects.a
+C:\Users\grzdn\CCompiler\bin\ar.exe cr CMakeFiles\Hexagon.dir/objects.a @CMakeFiles\Hexagon.dir\objects1.rsp
+C:\Users\grzdn\CCompiler\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\Hexagon.dir/objects.a -Wl,--no-whole-archive -o Hexagon.exe -Wl,--out-implib,libHexagon.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\Hexagon.dir\linklibs.rsp

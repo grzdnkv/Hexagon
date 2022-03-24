@@ -1,0 +1,115 @@
+\hypertarget{class_grid}{}\doxysection{Grid Class Reference}
+\label{class_grid}\index{Grid@{Grid}}
+
+
+Main class of game grid.  
+
+
+
+
+{\ttfamily \#include $<$Grid.\+h$>$}
+
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_grid_1_1_hex}{Hex}}
+\begin{DoxyCompactList}\small\item\em Nested class of \mbox{\hyperlink{class_grid_1_1_hex}{Hex}} cells\textquotesingle{}s. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_grid_a4ac9ff4f63552b4c61ff90fcb35ad66c}\label{class_grid_a4ac9ff4f63552b4c61ff90fcb35ad66c}} 
+\mbox{\hyperlink{class_grid_a4ac9ff4f63552b4c61ff90fcb35ad66c}{Grid}} ()
+\begin{DoxyCompactList}\small\item\em Class Constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_grid_a0d11c003f39e15b14d7b8ec13e8777b2}\label{class_grid_a0d11c003f39e15b14d7b8ec13e8777b2}} 
+void \mbox{\hyperlink{class_grid_a0d11c003f39e15b14d7b8ec13e8777b2}{View\+Ncur}} ()
+\begin{DoxyCompactList}\small\item\em Method draws game field. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_grid_a05d5f0db50252a0e2389865237bbb892}{Is\+Filled}} ()
+\item 
+int \mbox{\hyperlink{class_grid_a6d0ec23258b603ae5a76174553280ab3}{Distance}} (\mbox{\hyperlink{class_grid_1_1_hex}{Hex}} a, \mbox{\hyperlink{class_grid_1_1_hex}{Hex}} b)
+\item 
+void \mbox{\hyperlink{class_grid_a03491bc11de58bad7ff39061c47f8c11}{Distance\+Marker}} (\mbox{\hyperlink{class_grid_1_1_hex}{Hex}} a, int x, int y)
+\item 
+void \mbox{\hyperlink{class_grid_a67ba7a2db6eb98e244f5dec5b0db0596}{Invader}} (\mbox{\hyperlink{class_grid_1_1_hex}{Hex}} a, char playernumber)
+\item 
+bool \mbox{\hyperlink{class_grid_aeac33473a9b387b19b5f5136bee96193}{Is\+One\+Player}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_grid_a0c329fe5a15982803dd5bbee6e5a16e3}\label{class_grid_a0c329fe5a15982803dd5bbee6e5a16e3}} 
+\mbox{\hyperlink{class_grid_1_1_hex}{Grid\+::\+Hex}} {\bfseries field} \mbox{[}7\mbox{]}\mbox{[}7\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Main class of game grid. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_grid_a6d0ec23258b603ae5a76174553280ab3}\label{class_grid_a6d0ec23258b603ae5a76174553280ab3}} 
+\index{Grid@{Grid}!Distance@{Distance}}
+\index{Distance@{Distance}!Grid@{Grid}}
+\doxysubsubsection{\texorpdfstring{Distance()}{Distance()}}
+{\footnotesize\ttfamily int Grid\+::\+Distance (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_grid_1_1_hex}{Grid\+::\+Hex}}}]{a,  }\item[{\mbox{\hyperlink{class_grid_1_1_hex}{Grid\+::\+Hex}}}]{b }\end{DoxyParamCaption})}
+
+Function of calculating distance between two cell\textquotesingle{}s. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em a} & First(root) game cell. \\
+\hline
+\mbox{\texttt{ in}}  & {\em b} & Second game cell. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Distance between two cell\textquotesingle{}s. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_grid_a03491bc11de58bad7ff39061c47f8c11}\label{class_grid_a03491bc11de58bad7ff39061c47f8c11}} 
+\index{Grid@{Grid}!DistanceMarker@{DistanceMarker}}
+\index{DistanceMarker@{DistanceMarker}!Grid@{Grid}}
+\doxysubsubsection{\texorpdfstring{DistanceMarker()}{DistanceMarker()}}
+{\footnotesize\ttfamily void Grid\+::\+Distance\+Marker (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_grid_1_1_hex}{Grid\+::\+Hex}}}]{hex,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+Method draws possible move\textquotesingle{}s. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em a} & \mbox{\hyperlink{class_game}{Game}} cell. \\
+\hline
+\mbox{\texttt{ in}}  & {\em x} & x coordinate. \\
+\hline
+\mbox{\texttt{ in}}  & {\em y} & y coordinate. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_grid_a67ba7a2db6eb98e244f5dec5b0db0596}\label{class_grid_a67ba7a2db6eb98e244f5dec5b0db0596}} 
+\index{Grid@{Grid}!Invader@{Invader}}
+\index{Invader@{Invader}!Grid@{Grid}}
+\doxysubsubsection{\texorpdfstring{Invader()}{Invader()}}
+{\footnotesize\ttfamily void Grid\+::\+Invader (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_grid_1_1_hex}{Grid\+::\+Hex}}}]{a,  }\item[{char}]{playernumber }\end{DoxyParamCaption})}
+
+Function of capture enemy cells. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em a} & \mbox{\hyperlink{class_game}{Game}} cell. \\
+\hline
+\mbox{\texttt{ in}}  & {\em playernumber} & Number of player. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_grid_a05d5f0db50252a0e2389865237bbb892}\label{class_grid_a05d5f0db50252a0e2389865237bbb892}} 
+\index{Grid@{Grid}!IsFilled@{IsFilled}}
+\index{IsFilled@{IsFilled}!Grid@{Grid}}
+\doxysubsubsection{\texorpdfstring{IsFilled()}{IsFilled()}}
+{\footnotesize\ttfamily bool Grid\+::\+Is\+Filled (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Function of testing for occupancy. \begin{DoxyReturn}{Returns}
+Return bool. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_grid_aeac33473a9b387b19b5f5136bee96193}\label{class_grid_aeac33473a9b387b19b5f5136bee96193}} 
+\index{Grid@{Grid}!IsOnePlayer@{IsOnePlayer}}
+\index{IsOnePlayer@{IsOnePlayer}!Grid@{Grid}}
+\doxysubsubsection{\texorpdfstring{IsOnePlayer()}{IsOnePlayer()}}
+{\footnotesize\ttfamily bool Grid\+::\+Is\+One\+Player (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Function of testing for one player in game. \begin{DoxyReturn}{Returns}
+Return bool. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Grid.\+h\item 
+Grid.\+cpp\end{DoxyCompactItemize}
